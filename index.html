@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icondark.png">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -32,7 +32,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
+                    <img src="assets/img/icon.png" alt="">
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption text-center">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">Hear from Dean Dolan...</h1>
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">Hear from a hypothetical Dean Dolan...</h1>
                                     <p data-animation="fadeInUp" data-delay="0.4s">Personalized experiences are proven to increase conversions. Appli makes 
                                     it easy. Let's make the internet delightfully human.</p>
                                     <a href="dolan.html" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">Generate Now</a>
@@ -106,7 +106,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption text-center">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">Hear from President Eisgruber...</h1>
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">Read what President Eisgruber could say...</h1>
                                     <p data-animation="fadeInUp" data-delay="0.4s">Personalized experiences are proven to increase conversions. Appli makes 
                                     it easy. Let's make the internet delightfully human.</p>
                                     <a href="eisgruber.html" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">Generate Now</a>
@@ -120,7 +120,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption text-center">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">Hear from a combination of Dean Dolan and President Eisgruber...</h1>
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">What would Dean Dolan + President Eisgruber sound like...?</h1>
                                     <p data-animation="fadeInUp" data-delay="0.4s">Personalized experiences are proven to increase conversions. Appli makes 
                                     it easy. Let's make the internet delightfully human.</p>
                                     <a href="both.html" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">Generate Now</a>
@@ -160,6 +160,19 @@
   </footer>
 
 <!-- JS here -->
+<script>
+    var i = 0;
+    var speed = 50;
+
+    function typeWriter(text) {
+    if (i < text.length) {
+        document.getElementById("demo").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+    }
+</script>
+
 <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <!-- Jquery, Popper, Bootstrap -->
 <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
